@@ -1,0 +1,21 @@
+
+<dead_grave> <space>             	: "`"   grave # GRAVE ACCENT
+<dead_grave> <dead_grave>        	: "`"   grave # GRAVE ACCENT
+<dead_grave> <A>                 	: "Á"   Aacute 
+<dead_grave> <E>                 	: "É"   Eacute 
+<dead_grave> <I>                 	: "Í"   Iacute 
+<dead_grave> <O>                 	: "Ó"   Oacute 
+<dead_grave> <U>                 	: "Ú"   Uacute 
+<dead_grave> <L>                 	: "Ö"   Odiaeresis
+<dead_grave> <J>                 	: "Ü"   Udiaeresis
+<dead_grave> <greater>                 	: "Ő"   Odoubleacute
+<dead_grave> <M>                 	: "Ű"   Udoubleacute 
+<dead_grave> <a>                 	: "á"   aacute 
+<dead_grave> <e>                 	: "é"   eacute 
+<dead_grave> <i>                 	: "í"   iacute 
+<dead_grave> <o>                 	: "ó"   oacute 
+<dead_grave> <u>                 	: "ú"   uacute 
+<dead_grave> <l>                 	: "ö"   odiaeresis
+<dead_grave> <j>                 	: "ü"   udiaeresis
+<dead_grave> <period>                 	: "ő"   odoubleacute
+<dead_grave> <m>                 	: "ű"   udoubleacute 
