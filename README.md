@@ -1,4 +1,4 @@
-# en-HU-keyboard-layout
+# en-HU-keyboard-layout - Hungarian English Keyboard Layout
 
 Design:
 ---
