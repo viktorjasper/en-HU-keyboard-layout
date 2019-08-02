@@ -3,7 +3,7 @@
 MacOS Installation:
 ---
 
-The keyboard layout is created by  Ukelele 3.2.7 on MacOS High Sierra 10.13.1.
+The keyboard layout is created by  Ukelele 3.2.7 on MacOS High Sierra 10.13.1. It was tested and works with macOS 10.14.6 too.
 
 0. Optional: If you modify the keyboard make sure it has a different version and name than the previous.
 
