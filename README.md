@@ -5,9 +5,9 @@ Design:
 
 I switch between MacOS, Windows and Linux multiple times a day. I also often type characters with accents and I like to use keyboard shortcuts very much.
 
-I rarely have problem with keyboard shortcuts but sometimes I find a shortcut which cannot be pressed using an international layout. I believe the reason is that the shortcuts are designed with the us keyboard in mind. Most of the times I can change the shortcuts but I don't want to. When reinstalling the OS I would have to reconfigure every application I use. I believe it is easier to create a unified keyboard layout.
+I rarely have problem with keyboard shortcuts but sometimes I find a shortcut which cannot be pressed on an international keyboard layout. I believe the reason is that the shortcut was designed with the us keyboard in mind. Most application lets you change the shortcuts but it can be time consuming. When reinstalling the OS I would have to reconfigure every application. To make the configuration easier I decided to create a unified keyboard layout.
 
-I wanted to have a consistent keyboard layout which can be used the same way no matter what operating system is running so I have decided to create my own.
+I wanted to have a consistent keyboard layout which can be used the same way no matter what operating system I use. For these reasons I have decided to create my own layout.
 
 The Design Concept of the new Layout:
 
