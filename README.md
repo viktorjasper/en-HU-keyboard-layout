@@ -18,7 +18,7 @@ we want.
 
 2.) It must provide shortcuts for Hungarian accents I need no other accents.
 
-3.) It must work on under multiple operating systems: Linux, Windows, Mac.
+3.) It must work on multiple operating systems: Linux, Windows, Mac.
 
 4.) I want my keyboard to be as symmetrical as possible. So right modifier keys(alt, ctrl, shift and command) must do the same thing as their left modifier counterparts.
 
