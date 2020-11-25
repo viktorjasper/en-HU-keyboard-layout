@@ -9,9 +9,11 @@ The keyboard layout is created by  Ukelele 3.2.7 on MacOS High Sierra 10.13.1. I
 
 1. Remove keyboard layout(Input Source) using Keyboard Preferences.
 
-2. Delete previous version of keyboard layout. 
+2. Delete previous version of keyboard layout.
 
+~~~
 sudo rm -rf /Library/Keyboard\ Layouts/en-HU.bundle
+~~~
 
 3. Reboot
 
@@ -42,21 +44,38 @@ Linux Installation:
 
 Everything is installed manually on Ubuntu 16.04.3 LTS. Instead of creating a new keyboard layout I have decided to customize the existing basic US layout to my needs.
 
-1.) Add the contents of Compose.txt to
+1. Add the contents of Compose.txt to
 
-/usr/share/X11/locale/en_US.UTF-8/Compose
+   /usr/share/X11/locale/en_US.UTF-8/Compose
 
-2.) Remove all lines containg dead_grave from Compose.txt. Maybe a bit overkill but this ensures that my grave accents never collide with official accents.
+2. Remove all lines containg dead_grave from Compose.txt. Maybe a bit overkill but this ensures that my grave accents never collide with official accents.
 
-3.) Add the following line to
+3. Add the following line to
 
-/usr/share/X11/xkb/symbols/us
+   /usr/share/X11/xkb/symbols/us
 
+~~~
     key <LSGT> {	[ dead_grave	]	};
+~~~
 
-4.) Select the English(US) layout.
+4. Edit the keyboard codes in /usr/share/X11/xkb/keycodes/evdev (CentOS 7)
 
-5.) Reboot
+   The right alt should be handled the same way as left alt.
+
+~~~
+    <LALT> = 108;
+//	<RALT> = 108;
+~~~
+
+5. Optional: Set up keyboard layout for Truly Ergonomic Keyboard.
+
+~~~
+localectl set-x11-keymap us teck229
+~~~
+
+6. Select the English(US) layout.
+
+7. Reboot
 
 Design:
 ---
@@ -69,22 +88,22 @@ I wanted to have a consistent keyboard layout which can be used the same way no 
 
 The Design Concept of the new Layout:
 
-1.) It must work on international keyboards only. International keyboards have an
+1. It must work on international keyboards only. International keyboards have an
 extra button compared to the ANSI keyboard which is used in the US. Since it is an 
 additional button it is not usually used by keyboard shortcuts. So we can change it to anything
-we want. 
+we want.
 
-2.) It must provide shortcuts for Hungarian accents I need no other accents.
+2. It must provide shortcuts for Hungarian accents I need no other accents.
 
-3.) It must work on multiple operating systems: Linux, Windows, Mac.
+3. It must work on multiple operating systems: Linux, Windows, Mac.
 
-4.) I want my keyboard to be as symmetrical as possible. So right modifier keys(alt, ctrl, shift and command) must do the same thing as their left modifier counterparts.
+4. I want my keyboard to be as symmetrical as possible. So right modifier keys(alt, ctrl, shift and command) must do the same thing as their left modifier counterparts.
 
 The basic us layout is:
 
 |       |    |    |    |    |    |    |    |    |    |    |       |    |
 |----   |----|----|----|----|----|----|----|----|----|----|----   |----|
-| `~    | 1! | 2@ | 3# | 4$ | 5% | 6^ | 7& | 8* | 9( | 0) | -_    | =+ | 
+| `~    | 1! | 2@ | 3# | 4$ | 5% | 6^ | 7& | 8* | 9( | 0) | -_    | =+ |
 | qQ    | wW | eE | rR | tT | yY | uU | iI | oO | pP | [{ | ]}    |
 | aA    | sS | dD | fF | gG | hH | jJ | kK | lL | ;: | '" | \\ \| |
 | \\ \| | zZ | xX | cC | vV | bB | nN | mM | ,< | .> | /? |
@@ -93,7 +112,7 @@ The second backslash button is changed to a dead key which provides the hungaria
 
 |     |    |    |    |    |    |    |    |    |    |    |     |    |
 |---- |----|----|----|----|----|----|----|----|----|----|---- |----|
-| `~  |    |    |    |    |    |    |    |    |    |    |     |    | 
+| `~  |    |    |    |    |    |    |    |    |    |    |     |    |
 |     |    | éÉ |    |    |    | úÚ | íÍ | óÓ |    |    |     |
 | áÁ  |    |    |    |    |    | üÜ |    | öÖ |    |    |     |
 |     |    |    |    |    |    | űŰ |    | őŐ |    |    |
